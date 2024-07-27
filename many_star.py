@@ -1,5 +1,5 @@
 from turtle import*
-import colorsys
+import colorsys as col
 
 bgcolor("black")
 speed(0)
@@ -9,7 +9,7 @@ n = 50
 h = 9
 
 for i in range(270):
-    c = colorsys.hsv_to_rgb(h,1,1)
+    c = col.hsv_to_rgb(h,1,1)
     h += 1/n
     color(c)
     forward(i*2)
